@@ -12,6 +12,19 @@ public class Tukorszo {
         Tukorszo.szo = bSzo;
         verem = new Stack<>();
 
+        for (int i = 0; i < bSzo.length() - 2; i++) {
+            for (int j = 0; j < bSzo.length(); j++) {
+
+                String reszSzo = bSzo.substring(i, j + 1);
+                if (isTukorszoE(reszSzo)) {
+
+                    System.out.println(reszSzo);
+
+                }
+
+            }
+        }
+
         return isTukorszoE(bSzo);
 
     }

@@ -17,4 +17,19 @@ public class LimitedStack<T> extends Stack<T> {
 
     }
 
+    @Override
+    public void push(T element) {
+
+        if (!this.isFull()) {
+
+            super.push(element);
+
+        } else {
+
+            throw new StackFullException();
+
+        }
+
+    }
+
 }

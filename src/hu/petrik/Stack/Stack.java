@@ -22,7 +22,19 @@ public class Stack<T> {
 
     public T pop() {
 
-        return this.elements.remove(this.elements.size() - 1);
+        T element = null;
+
+        if (this.elements.size() > 0) {
+
+            element = this.elements.remove(this.elements.size() - 1);
+
+        } else {
+
+            throw new StackEmptyException();
+
+        }
+
+        return element;
 
     }
 

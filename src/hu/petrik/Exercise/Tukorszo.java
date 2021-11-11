@@ -34,7 +34,7 @@ public class Tukorszo {
 
         }
 
-        return false;
+        return verem.isEmpty();
 
     }
 
